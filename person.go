@@ -63,6 +63,7 @@ func (f *Faker) MobilePhoneNumber() string {
 	return fmt.Sprintf("%s%03d%04d", prefix, mid, end)
 }
 
+// Hobby はランダムな趣味を返します。
 func (f *Faker) Hobby() string {
 	return data.Person["hobby"][f.Rand.Intn(len(data.Person["hobby"]))]
 }
